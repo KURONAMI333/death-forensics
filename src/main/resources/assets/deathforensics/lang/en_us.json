@@ -1,0 +1,19 @@
+{
+    "deathforensics.hint": "Run /howdididie to see exactly what just killed you.",
+    "deathforensics.title": "Death Forensics — your last death:",
+    "deathforensics.cause": "Cause: %s",
+    "deathforensics.where": "Died at (%s, %s, %s) in %s, on day %s.",
+    "deathforensics.killer": "%s was about %s blocks to the %s.",
+    "deathforensics.nearby": "%s hostile mob(s) were within 16 blocks at the time.",
+    "deathforensics.nearby.none": "No hostile mobs were within 16 blocks.",
+    "deathforensics.none": "No death recorded this session yet — come back after you die.",
+    "deathforensics.playeronly": "No death to report (player not found or not online).",
+    "deathforensics.dir.n": "North",
+    "deathforensics.dir.ne": "Northeast",
+    "deathforensics.dir.e": "East",
+    "deathforensics.dir.se": "Southeast",
+    "deathforensics.dir.s": "South",
+    "deathforensics.dir.sw": "Southwest",
+    "deathforensics.dir.w": "West",
+    "deathforensics.dir.nw": "Northwest"
+}
