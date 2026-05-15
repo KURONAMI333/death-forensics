@@ -1,0 +1,19 @@
+{
+    "deathforensics.hint": "输入 /howdididie 可精确查看刚才是什么杀了你。",
+    "deathforensics.title": "Death Forensics — 你最近的死亡：",
+    "deathforensics.cause": "死因：%s",
+    "deathforensics.where": "在 %4$s 的 (%1$s, %2$s, %3$s)、第 %5$s 天死亡。",
+    "deathforensics.killer": "%1$s 当时在 %3$s 方向约 %2$s 格处。",
+    "deathforensics.nearby": "当时 16 格内有 %s 只敌对生物。",
+    "deathforensics.nearby.none": "16 格内没有敌对生物。",
+    "deathforensics.none": "本次会话还没有死亡记录 —— 死了之后再来。",
+    "deathforensics.playeronly": "没有可显示的死亡（玩家未找到或不在线）。",
+    "deathforensics.dir.n": "北",
+    "deathforensics.dir.ne": "东北",
+    "deathforensics.dir.e": "东",
+    "deathforensics.dir.se": "东南",
+    "deathforensics.dir.s": "南",
+    "deathforensics.dir.sw": "西南",
+    "deathforensics.dir.w": "西",
+    "deathforensics.dir.nw": "西北"
+}
