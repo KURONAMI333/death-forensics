@@ -52,7 +52,7 @@ public class DeathForensicsCommand {
         try {
             ServerPlayer target = EntityArgument.getPlayer(ctx, "player");
             return report(ctx.getSource(), DeathListener.lastDeath(target.getUUID()));
-        } catch (Exception e) {
+        } catch (com.mojang.brigadier.exceptions.CommandSyntaxException e) {
             ctx.getSource().sendFailure(
                 Component.translatable("deathforensics.playeronly"));
             return 0;
