@@ -1,0 +1,19 @@
+{
+    "deathforensics.hint": "Tape /howdididie pour voir exactement ce qui vient de te tuer.",
+    "deathforensics.title": "Death Forensics — ta dernière mort :",
+    "deathforensics.cause": "Cause : %s",
+    "deathforensics.where": "Mort en (%1$s, %2$s, %3$s) dans %4$s, au jour %5$s.",
+    "deathforensics.killer": "%1$s était à environ %2$s blocs vers le %3$s.",
+    "deathforensics.nearby": "%s mobs hostiles se trouvaient dans un rayon de 16 blocs.",
+    "deathforensics.nearby.none": "Aucun mob hostile dans un rayon de 16 blocs.",
+    "deathforensics.none": "Aucune mort enregistrée cette session — reviens après être mort.",
+    "deathforensics.playeronly": "Aucune mort à afficher (joueur introuvable ou hors ligne).",
+    "deathforensics.dir.n": "Nord",
+    "deathforensics.dir.ne": "Nord-est",
+    "deathforensics.dir.e": "Est",
+    "deathforensics.dir.se": "Sud-est",
+    "deathforensics.dir.s": "Sud",
+    "deathforensics.dir.sw": "Sud-ouest",
+    "deathforensics.dir.w": "Ouest",
+    "deathforensics.dir.nw": "Nord-ouest"
+}
