@@ -1,0 +1,19 @@
+{
+    "deathforensics.hint": "Usa /howdididie para ver exactamente qué acaba de matarte.",
+    "deathforensics.title": "Death Forensics — tu última muerte:",
+    "deathforensics.cause": "Causa: %s",
+    "deathforensics.where": "Moriste en (%1$s, %2$s, %3$s) en %4$s, el día %5$s.",
+    "deathforensics.killer": "%1$s estaba a unos %2$s bloques al %3$s.",
+    "deathforensics.nearby": "Había %s mobs hostiles en 16 bloques en ese momento.",
+    "deathforensics.nearby.none": "No había mobs hostiles en 16 bloques.",
+    "deathforensics.none": "Aún no hay muerte registrada esta sesión — vuelve cuando mueras.",
+    "deathforensics.playeronly": "No hay muerte que mostrar (jugador no encontrado o desconectado).",
+    "deathforensics.dir.n": "Norte",
+    "deathforensics.dir.ne": "Noreste",
+    "deathforensics.dir.e": "Este",
+    "deathforensics.dir.se": "Sureste",
+    "deathforensics.dir.s": "Sur",
+    "deathforensics.dir.sw": "Suroeste",
+    "deathforensics.dir.w": "Oeste",
+    "deathforensics.dir.nw": "Noroeste"
+}

@@ -1,0 +1,19 @@
+{
+    "deathforensics.hint": "/howdididie で「今のは何にやられたか」を正確に確認できるよ。",
+    "deathforensics.title": "Death Forensics — 直近の死：",
+    "deathforensics.cause": "死因: %s",
+    "deathforensics.where": "%4$s の (%1$s, %2$s, %3$s)、%5$s 日目に死亡。",
+    "deathforensics.killer": "%1$s が約 %2$s ブロック、%3$s の方向にいた。",
+    "deathforensics.nearby": "そのとき敵対 mob が 16 ブロック以内に %s 体いた。",
+    "deathforensics.nearby.none": "16 ブロック以内に敵対 mob はいなかった。",
+    "deathforensics.none": "このセッションではまだ死亡記録なし — 死んでからもう一度どうぞ。",
+    "deathforensics.playeronly": "報告できる死がない（プレイヤーが見つからない／オフライン）。",
+    "deathforensics.dir.n": "北",
+    "deathforensics.dir.ne": "北東",
+    "deathforensics.dir.e": "東",
+    "deathforensics.dir.se": "南東",
+    "deathforensics.dir.s": "南",
+    "deathforensics.dir.sw": "南西",
+    "deathforensics.dir.w": "西",
+    "deathforensics.dir.nw": "北西"
+}

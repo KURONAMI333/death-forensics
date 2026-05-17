@@ -1,0 +1,19 @@
+{
+    "deathforensics.hint": "Nutze /howdididie, um genau zu sehen, was dich gerade getötet hat.",
+    "deathforensics.title": "Death Forensics — dein letzter Tod:",
+    "deathforensics.cause": "Ursache: %s",
+    "deathforensics.where": "Gestorben bei (%1$s, %2$s, %3$s) in %4$s, an Tag %5$s.",
+    "deathforensics.killer": "%1$s war etwa %2$s Blöcke %3$s entfernt.",
+    "deathforensics.nearby": "%s feindliche Mobs waren dabei im Umkreis von 16 Blöcken.",
+    "deathforensics.nearby.none": "Keine feindlichen Mobs im Umkreis von 16 Blöcken.",
+    "deathforensics.none": "Noch kein Tod in dieser Sitzung — komm wieder, wenn du gestorben bist.",
+    "deathforensics.playeronly": "Kein Tod zum Anzeigen (Spieler nicht gefunden oder offline).",
+    "deathforensics.dir.n": "Norden",
+    "deathforensics.dir.ne": "Nordosten",
+    "deathforensics.dir.e": "Osten",
+    "deathforensics.dir.se": "Südosten",
+    "deathforensics.dir.s": "Süden",
+    "deathforensics.dir.sw": "Südwesten",
+    "deathforensics.dir.w": "Westen",
+    "deathforensics.dir.nw": "Nordwesten"
+}

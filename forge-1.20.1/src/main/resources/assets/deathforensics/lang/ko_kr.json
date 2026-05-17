@@ -1,0 +1,19 @@
+{
+    "deathforensics.hint": "/howdididie 로 방금 무엇에 죽었는지 정확히 볼 수 있어요.",
+    "deathforensics.title": "Death Forensics — 가장 최근의 죽음:",
+    "deathforensics.cause": "사인: %s",
+    "deathforensics.where": "%4$s의 (%1$s, %2$s, %3$s)에서 %5$s일차에 사망.",
+    "deathforensics.killer": "%1$s이(가) 약 %2$s블록 %3$s쪽에 있었어요.",
+    "deathforensics.nearby": "그때 16블록 안에 적대 몹이 %s마리 있었어요.",
+    "deathforensics.nearby.none": "16블록 안에 적대 몹은 없었어요.",
+    "deathforensics.none": "이번 세션에는 아직 사망 기록이 없어요 — 죽은 뒤 다시 시도하세요.",
+    "deathforensics.playeronly": "보여줄 죽음이 없어요 (플레이어를 찾을 수 없거나 오프라인).",
+    "deathforensics.dir.n": "북",
+    "deathforensics.dir.ne": "북동",
+    "deathforensics.dir.e": "동",
+    "deathforensics.dir.se": "남동",
+    "deathforensics.dir.s": "남",
+    "deathforensics.dir.sw": "남서",
+    "deathforensics.dir.w": "서",
+    "deathforensics.dir.nw": "북서"
+}
