@@ -41,7 +41,7 @@ Server-side, read-only: it only listens to vanilla `LivingDeathEvent` and report
 
 ## Known limitations
 
-v0.1 keeps only your **last** death in memory (cleared on server stop). The persistent multi-death history is a separate mod (Death Log) by design, so the two don't overlap.
+v0.1 keeps only your **last** death in memory (cleared on server stop). The persistent multi-death history is a separate mod (Death Log) by design, so the two don't overlap. `/howdididie <player>` (op) only resolves players who are **currently online**.
 
 ## Install
 
