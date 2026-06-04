@@ -1,17 +1,8 @@
 # Death Forensics
 
-> The vanilla death message says "you blew up." This says **what** blew you up, **where**, from **which direction**, with how many hostiles around — automatically, the instant you die.
+The vanilla death message says "you blew up." This says what blew you up, where, from which direction, and how many hostiles were nearby — automatically, the instant you die.
 
-"I died and have no idea what hit me" is one of the most common Minecraft frustrations — admins on r/admincraft chasing mystery deaths, players on r/feedthebeast killed by something off-screen with nothing to learn from. The vanilla message is too vague to act on. Death Forensics turns each death into a short, plain-language post-mortem you can actually use.
-
-- 🔎 **Auto-posted on death** — no command needed; a color-coded report lands in chat
-- 🧭 Exact coords + dimension + in-world day, the killer's type, distance and 8-wind direction
-- 🌐 Cause text reuses Minecraft's own death message, so it shows in **each player's own language** automatically
-- ✅ Only certain vanilla facts — it never guesses
-
-## What it does / Usage
-
-When you die, this is posted to chat automatically:
+When you die, a short post-mortem is posted to your chat: the cause (it reuses Minecraft's own death message, so it shows in each player's language), the exact coordinates, dimension and in-world day, the killer's type with distance and 8-wind direction, and how many hostile mobs were within 16 blocks at the time.
 
 ```
 Death Forensics — your last death:
@@ -21,42 +12,10 @@ Death Forensics — your last death:
  ┃ 14 hostile mob(s) were within 16 blocks at the time.
 ```
 
-`/howdididie` (alias `/deathreport`) re-shows your last death any time. `/howdididie <player>` is op-only.
+`/howdididie` (alias `/deathreport`) re-shows your last death at any time. `/howdididie <player>` is op-only and resolves players who are currently online.
 
-## Supported loaders / versions
+It only reports facts Minecraft already knows — it never guesses. It listens to the vanilla death event and writes nothing to the world, so it can't conflict with other mods or damage sources. It keeps your last death in memory (cleared on server stop); for a persistent multi-death history, see the sibling mod Death Log. Output is localized in 9 languages.
 
-| Minecraft | NeoForge | Forge | Fabric |
-|---|:---:|:---:|:---:|
-| 1.21.1 | ✅ | ✅ | ✅ |
-| 1.20.1 | — | ✅ | ✅ |
+Server-side — install on the server only; clients don't need it.
 
-Ships for NeoForge / Forge / Fabric on Minecraft 1.21.1, and Forge / Fabric on Minecraft 1.20.1 (NeoForge has no 1.20.1 build). Server-side, dependency-free, identical behaviour on every loader.
-
-## Dependencies
-
-None.
-
-## Compatibility & scope
-
-Server-side, read-only: it only listens to vanilla `LivingDeathEvent` and reports. No mixin, no registered blocks/items, no passive tick task — it cannot conflict with other mods. Works with any mod's damage sources (cause text comes from vanilla's own death message).
-
-## Known limitations
-
-v0.1 keeps only your **last** death in memory (cleared on server stop). The persistent multi-death history is a separate mod (Death Log) by design, so the two don't overlap. `/howdididie <player>` (op) only resolves players who are **currently online**.
-
-## Install
-
-1. Install your mod loader — NeoForge, Forge, or Fabric — for Minecraft 1.21.1 or 1.20.1.
-2. Drop `deathforensics-0.1.0.jar` into `mods/`. Server-side (clients don't need it).
-
-- Minecraft 1.21.1 · NeoForge · JDK 21
-
-## Languages
-
-Output localized in 9 languages (machine-baseline; native-speaker PRs welcome).
-
-## License
-
-MIT — modpack inclusion welcome, no credit required.
-
-Author: KURONAMI
+Free to use in any modpack. Source and issues: https://github.com/KURONAMI333/death-forensics
