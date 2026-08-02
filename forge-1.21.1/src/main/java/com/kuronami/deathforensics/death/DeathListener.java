@@ -1,8 +1,9 @@
 package com.kuronami.deathforensics.death;
 
+import java.util.Collections;
+import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.UUID;
-import java.util.concurrent.ConcurrentHashMap;
 import net.minecraft.network.chat.Component;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraftforge.event.entity.living.LivingDeathEvent;
@@ -18,11 +19,26 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
  * <p>v0.1 keeps only the last death per player, in memory, cleared on
  * server stop (the persistent multi-death journal is a separate mod).
  * Read-only against the world.
+ *
+ * <p>{@code /howdididie} is documented (README / STORE_BODY) to re-show a
+ * death "at any time", i.e. across logout/login within the same server
+ * run — so entries are <em>not</em> evicted on logout. Instead the map is
+ * capped at {@link #MAX_TRACKED_PLAYERS} and evicts the
+ * least-recently-looked-up player once full, bounding memory on
+ * long-running servers without breaking that contract for anyone who
+ * died recently.
  */
 public class DeathListener {
 
+    private static final int MAX_TRACKED_PLAYERS = 2000;
+
     private static final Map<UUID, DeathRecord> LAST_DEATHS =
-        new ConcurrentHashMap<>();
+        Collections.synchronizedMap(new LinkedHashMap<>(16, 0.75f, true) {
+            @Override
+            protected boolean removeEldestEntry(Map.Entry<UUID, DeathRecord> eldest) {
+                return size() > MAX_TRACKED_PLAYERS;
+            }
+        });
 
     public static DeathRecord lastDeath(UUID uuid) {
         return LAST_DEATHS.get(uuid);
