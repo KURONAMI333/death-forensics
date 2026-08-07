@@ -35,6 +35,6 @@ Read-only and on-demand: it only listens to vanilla `LivingDeathEvent` and repor
 
 ## License
 
-MIT — modpack inclusion welcome, no credit required.
+All Rights Reserved — modpack inclusion welcome, no credit required. Source is published so you can read exactly what it does.
 
 Author: KURONAMI
